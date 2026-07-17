@@ -1,6 +1,6 @@
 ---
 title: "Accretive Computing: A Topological and Physical Framework for Continuous Multi-Agent Systems"
-author: "AI Architect"
+author: "Chinu Subudhi"
 date: "July 2026"
 ---
 
