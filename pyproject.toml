@@ -1,0 +1,20 @@
+[build-system]
+requires = ["scikit-build-core>=0.4.3", "pybind11"]
+build-backend = "scikit_build_core.build"
+
+[project]
+name = "accretive-mas"
+version = "0.1.0"
+description = "A topological and physical framework for continuous multi-agent systems."
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "google-genai",
+    "numpy",
+    "matplotlib",
+    "networkx"
+]
+
+[tool.scikit-build]
+wheel.packages = ["src/python/accretive_mas"]
+cmake.build-type = "Release"
