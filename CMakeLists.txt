@@ -7,9 +7,9 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Optimization Flags
 if(MSVC)
-    add_compile_options(/O2 /arch:AVX2 /fp:fast)
+    add_compile_options(/O2 /fp:fast)
 else()
-    add_compile_options(-O3 -march=native -ffast-math)
+    add_compile_options(-O3 -ffast-math)
 endif()
 
 include(FetchContent)
@@ -41,3 +41,5 @@ pybind11_add_module(_core
 
 target_include_directories(_core PRIVATE include)
 target_link_libraries(_core PRIVATE Eigen3::Eigen)
+
+install(TARGETS _core DESTINATION accretive_mas)
