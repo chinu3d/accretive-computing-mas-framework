@@ -19,7 +19,7 @@ jobs:
           submodules: true
 
       - name: Build wheels
-        uses: pypa/cibuildwheel@v2
+        uses: pypa/cibuildwheel@v2.22.0
         env:
           # Only build for CPython 3.9 through 3.12 (standard current targets)
           CIBW_BUILD: cp39-* cp310-* cp311-* cp312-*
