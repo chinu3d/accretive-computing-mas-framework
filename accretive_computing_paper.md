@@ -243,7 +243,7 @@ When routing logic is handled by a spatial physics engine rather than conditiona
 Natural organizations do not operate on rigid Directed Acyclic Graphs. They operate on proximity, shared context, and spontaneous collaboration. Accretive Computing allows AI swarms to behave identically. Agents can form temporary sub-committees simply by thinking about the same problem simultaneously, resolving the issue, and then naturally drifting apart in the topology.
 
 ### 6.3. Future Roadmap
-The `v0.1.0` release is just the foundation. Our roadmap for `v1.0.0` includes:
+The `v0.1.1` release is just the foundation. Our roadmap for `v1.0.0` includes:
 * **GPU Acceleration**: Moving the `ContinuousSubstrate` from Eigen3 CPU compute to CUDA, allowing for real-time simulation of millions of agents.
 * **Multi-Modal Topology**: Projecting Image Embeddings (e.g., CLIP vectors) into the same substrate, allowing vision agents and text agents to physically collide over shared concepts.
 * **Dynamic Dimensional Reduction**: Using real-time UMAP within the C++ engine to further optimize the clustering algorithms.
